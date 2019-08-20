@@ -1,6 +1,6 @@
 # LaTeX resume template
 
-This is the template I use for my own resume. I've compiled it with elements from several templates, including:
+This is the template I use for my own resume. I've forked this from compiled it with elements from https://github.com/opensorceror/Data-Engineer-Resume-LaTeX and below are the several templates which are utlized:
 
 1. [Carmine Spagnuolo's Twenty Seconds Curriculum Vitae](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex)
 2. [Carmine Benedetto's Smart Fancy LaTeX CV](https://github.com/neoben/smart-fancy-latex-cv)
