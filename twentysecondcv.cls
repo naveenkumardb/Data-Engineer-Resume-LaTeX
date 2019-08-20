@@ -164,11 +164,20 @@
 		\end{tikzpicture}
 	}
 }
+
+\newcommand\career[1]{ 
+	\renewcommand{\career}{
+		{#1}
+	}
+}
+
 \newcommand\education[1]{ 
 	\renewcommand{\education}{
 		{#1}
 	}
 }
+
+
 
 %----------------------------------------------------------------------------------------
 %  SIDEBAR LAYOUT
@@ -246,19 +255,22 @@
     {\large \textbf{Overview}}
 
 	\skills
+
+ %------------------------------------------------
+         
+        \vspace{3mm}
+        \profilesection{Career Summary}{0.8cm} 
+        
+        \career
         
         %------------------------------------------------
-        
-        \vspace{3mm}
-       
-	 {\large \textbf{Programming}} 
-
-		 \programming
          
         \vspace{3mm}
         \profilesection{Education}{3cm} 
         
         \education
+
+       
       
   \end{textblock}
 }
