@@ -71,6 +71,8 @@
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
 \definecolor{green}{HTML}{C2E15F}
+%\definecolor{forestgreen}{HTML}{3A9C31}
+\definecolor{forestgreen}{HTML}{33912B}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
@@ -195,7 +197,7 @@
     %------------------------------------------------
     
         \vspace{4mm}
-    {\Huge\color{pblue}\cvname}
+    {\Huge\color{forestgreen}\cvname}
     
     \vspace{2mm}
 
@@ -249,26 +251,26 @@
     \end{tabular}
 
     %------------------------------------------------
+
+ %------------------------------------------------
+         
+        \vspace{3mm}
+        \profilesection{Education}{3cm} 
+        \education
+        
     \vspace{3mm}
     \profilesection{Technical Skills}{1.2cm}
     
     {\large \textbf{Overview}}
 
 	\skills
-
- %------------------------------------------------
-         
-        \vspace{3mm}
-        \profilesection{Career Summary}{0.8cm} 
-        
-        \career
         
         %------------------------------------------------
          
         \vspace{3mm}
-        \profilesection{Education}{3cm} 
+        \profilesection{Career Summary}{0.8cm} 
+        \career
         
-        \education
 
        
       
@@ -285,9 +287,9 @@
 	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
 }
 
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1{%#2#3{%
 	{%
-		\color{pblue} #1#2#3%
+		\color{forestgreen} #1%#2#3%
 	}%
 }
 

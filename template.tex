@@ -11,44 +11,73 @@
 % The MIT License (see included LICENSE file)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% https://github.com/naveenkumardb/Machine-Learning-Engineer-Resume-LaTeX
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+
 
 % Command for printing skill overview bubbles
-\newcommand\skills{ 
-~
-	\smartdiagram[bubble diagram]{
-        \textbf{Data}\\\textbf{Science},
-        \textbf{~Statistical~}\\\textbf{Analysis},
-        \textbf{~Data~}\\\textbf{Visualization},
-        \textbf{~~Machine~~}\\\textbf{Learning},
-        \textbf{~Data~}\\\textbf{~Wrangling~}
-    }
+\newcommand\skills{
+\begin{itemize}
+  \item AI
+  \begin{itemize}
+    \item Machine Learning
+    \begin{itemize}
+      \item Deep Learning
+      \item Reinforcement Learning
+    \end{itemize}
+  \end{itemize}
+    \item Statistical Data Analysis
+   \item Algorithms
+   \begin{itemize}
+    \item Mathematical Analysis
+    \item Parallel | Distributed
+   \end{itemize}
+\end{itemize}
+% ~
+% 	\smartdiagram[bubble diagram]{
+%         \textbf{Data}\\\textbf{Science},
+%         \textbf{~Machine~}\\\textbf{Learning},
+%         \textbf{~Re~}\\\textbf{Visualization},
+%         \textbf{~~Machine~~}\\\textbf{Learning},
+%         \textbf{~Data~}\\\textbf{~Wrangling~}
+%     }
 }
 
 
 % Projects text
-\career{
-\textbf{\large J.P Morgan Chase \& Co.} \\
-Associate Software Engineering \\
-\textbf{Duration:} Oct. 2013 - Present \vspace{2mm}
-
-\textbf{\large Collabera Technologies} \\
-\textbf{Client:} J.P Morgan Chase \& Co.\\
-Test Engineer \\
-\textbf{Duration:} Feb. 2013 - Oct. 2013
-}
-
 \education{
-\textbf{Bachleor of Engineering } \\
-Visvesvaraya Technological University  \\
-2008 - 2011 | Belgaum, India
-}
+\textbf{Master of Science Degrees: GPA 3.87}\\
+\centerline{\textbf{Computer Science | Mathematics}}\\
+Western Washington University\\
+Bellingham, WA
 
+\textbf{Bachelor of Science} | \textbf{Bachelor of Arts:}\\
+\centerline{\textbf{Physics} | \textbf{Computer Science}}\\
+The Evergreen State College\\
+Olympia, WA\\
+}
+\career{
+\textbf{Western Washington University} \\
+Graduate Research Assistant \\
+\textbf{Duration:} Mar. 2022 - Present\\
+Graduate Teaching Assistant \\
+\textbf{Duration:} Oct. 2021 - Mar. 2022 \vspace{2mm}\\
+\textbf{The Evergreen State College}\\
+Teaching Assistant\\
+\textbf{Duration:} Oct. 2020 - Jun. 2021 \vspace{2mm}\\
+\textbf{College Tutor}:\\
+Bellingham Technical College:\\
+\textbf{Duration:} Mar. 2020 - Mar. 2022\\
+Skagit Vallege College:\\
+\textbf{Duration:} Dec. 2019 - Jun. 2021\\
+}
 
 
 %----------------------------------------------------------------------------------------
@@ -56,17 +85,18 @@ Visvesvaraya Technological University  \\
 %----------------------------------------------------------------------------------------
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\cvname{\huge Naveen Kumar D B} % Your name
+\cvname{\huge Seth Briney} % Your name
 \cvjobtitle{\large Machine Learning Engineer} % Job
 % title/career
 
-\cvlinkedin{/in/naveenkumardb}
-\cvgithub{naveenkumardb}
-\cvnumberphone{+91 9742400384} % Phone number
-\cvsite{} % Personal website
-\cvmail{nvnkmrdb@gmail.com} % Email address
+\cvlinkedin{/in/SethLBriney}
+\cvgithub{Seth1Briney}
+\cvnumberphone{+1 (360)708-1539} % Phone number
+\cvsite{SethBriney.com} % Personal website
+\cvmail{SethLBriney@gmail.com} % Email address
 
 %----------------------------------------------------------------------------------------
+\definecolor{ForestGreen}{HTML}{33912B}
 
 \begin{document}
 
@@ -76,76 +106,32 @@ Visvesvaraya Technological University  \\
 %	 SUMMARY
 %----------------------------------------------------------------------------------------
 
-\section{Summary}
+Strong passion for scientific computing and AI. I have a broad range of knowledge and skills in computational methods, science, and mathematics. I'm eager to put my knowledge to use, and to expand and deepen my diverse skill-set.
 
-A Machine Learning Engineer aspirant who is passionate about learning cutting-edge technology and solving real-world problems, currently working with 6 Years experience as a Test Automation Engineer in \textbf{J. P Morgan Chase \& Co.} \\
-\begin{twenty}
-\twentyitem
-{}
-{}
-{}
-{\href{}{}}
-{}
-{\begin{itemize}
-\item Knowledge on machine learning \textbf{Data Processing} steps like Data Exploration, Feature Cleaning, Feature Selection, Feature Encoding to construct a Dataset to apply various machine learning algorithms.
-\item Good Knowledge in utilizing various libraries like \textbf{Numpy, Pandas, Matplotlib, Seaborn} to perform various Data Processing steps to develop a model.
-\item Knowledge in developing machine learning model using \textbf{Scikit-Learn} library by utlizing various classification, regression and clustering algorithms.
-\item Hands-on knowledge on various algorithms like \textbf{Regression, Logistic Regression, Random Forest, Decision Trees, Support Vector Machines, K Nearest Neighbours (KNN), K-Means and Naive Bayes} techniques.
-\item Developing my skills by building machine learning models on various data sets available in Kaggle using Python and various libararies mentioned above. 
-\end{itemize}}
-\\
-\end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 Kaggle Projects
-%----------------------------------------------------------------------------------------
-\section{Kaggle Projects}
-\begin{twenty} % Environment for a list with descriptions
-\twentyitem
-    	{}
-		{}
-        {Home Credit Default Risk}
-        {\href{}{}}
-        {}
-        {\begin{itemize}
-        \item The data is provided by Home Credit, a service dedicated to provided lines of credit (loans) to the unbanked population. Predicting whether or not a client will repay a loan or have difficulty is a critical business need and we need to develop a machine learning model to identify this task.
-        \end{itemize}}
-        \\
-\end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 Experience
-%----------------------------------------------------------------------------------------
-\section{Experience}
-\begin{twenty}
-	\twentyitem
-    	{May 2017 -}
-		{Present}
-        {Access File Services}
-        {\href{}{Test Automation Engineer}}
-        {}
-        {
-        {\begin{itemize}
-        \item \textbf {Tools Used}: Selenium Web Driver, Jenkins, Maven, Git, BitBucket
-        \item Focused on automating test cases using Selenium and Java for various regression tests by also performing Functional testing. 
-        \item Identify \& Develop automated test cases to perform PVT tests in production environment.
-        \item Took various reponsibilities by exposing myself to various stages of SDLC \& STLC till the last stage to perform End-to-End testing and Product Verification Testing. 
-        \item Extensive exposure to various defect management tools like ALM, JIRA for Creating Requirements, Writing Test Cases, Creating Test Sets, Mapping the Requirements and Logging Defects. \vspace{2mm}
-		\end{itemize}}
-        }
-	\twentyitem
-    	{Feb 2013 -}
-		{Apr 2017}
-        {FircoSoft}
-        {\href{}{UAT Specialist}}
-        {}
-        {
-        {\begin{itemize}
-        \item \textbf {Tools Used}: Selenium Web Driver, Filezilla, Putty
-        \item Primarily automated test cases using Selenium on Fircosoft Message Filter UI to perform various regression tests.
-        \item Responsible for building rules and lists files using Fircosoft MultiLaws Manager and Fircosoft Multilist Manager respectively and testing them using FFF Classic.
-        \item Worked on several Fircosoft tools like FMM, FML, FMF, FFF, FFF Classic, Fircosoft Continuity and was expertise in using these tools to perform various tests related to rules, lists on various payments/transactions.
-		\end{itemize}}
-        }
-\end{twenty}
+\section{L\textcolor{ForestGreen}{ang}uages, \textcolor{ForestGreen}{Mod}ules, and \textcolor{ForestGreen}{Alg}orithms}
+*skill* means strong familiarity, **skill** means mastered.
+\begin{itemize}
+\item Python modules including: \textbf{Gymnasium/OpenAiGym, MatPlotLib, **Numpy**, *Pandas*, PyGame, SciKit-Learn, *SKRL*, TensorFlow, *WanDB*, and **PyTorch**}.
+\item Computational languages including: \textbf{Julia, *MATLAB/Octave*, R}.
+\item General languages including: \textbf{*BASH*, *C*, C++, C\#, Java, **Python**}.
+\item Algorithms including: \textbf{Gaussian Mixture Model clustering, Expectation Maximization, Inverse Transform Sampling, Matrix Analytic Methods using SVD, QR factorization, Rejection Sampling, Red/Black SOR, and Stochastic Integration}.
+\item Mathematics and science disciplines including: \textbf{*Analysis*, Algebra, /*Calculus*, Chemistry, *Physics*, *Statistics*}
+\item Computational techniques such as: \textbf{Distributed Computing, HPC, Meta Learning, Parallel Computing, Transfer Learning}
+\item Miscelaneous \textbf{*Bayesian Decision Thoery*, *ChatGPT* Docker, EnergyPlus, Excel, Git, *LaTex*, Project Collaboration, *SQL*}
+\end{itemize}
+\begin{itemize}
+\item I am very interested in learning more about: bci, biology, biogerontology, ecology, investing, music theory, and neuroscience. 
+\end{itemize}
+\section{E\textcolor{ForestGreen}{xp}erience}
+\setlength{\tabcolsep}{8pt}  % increase the left and right padding
+\renewcommand{\arraystretch}{1.5} % increase the vertical padding
+\begin{tabular}{|>{\centering\arraybackslash}m{0.2\textwidth}|>{\RaggedRight\arraybackslash}m{0.75\textwidth}|}
+\hline
+Time-frame & Summary\\\hline
+1 year & Worked in a funded research collaboration with \textbf{PNNL} focused on electric load forecasting for commercial office buildings using \textbf{EnergyPlus} for simulation and \textbf{PyTorch} for \textbf{deep learning}. Utilized \textbf{HTCondor} for \textbf{distributed} \textbf{HPC}, and \textbf{Weights and Biases} \textbf{for hyper-parameter} tuning in \textbf{meta/transfer-learning} experiments.\\\hline
+9 months & In another funded collaboration with \textbf{PNNL}, applied \textbf{deep reinforcement learning} toward achieving \textbf{optimal control} in a variety of \textbf{physics} simulators including \textbf{building energy} simulations. Contributed to the \textbf{Neuromancer} open-source project, creating \textbf{PslGym} to wrap \textbf{Neuromancer PSL Nonautonomous} systems in a \textbf{Gymnasium} interface for deep reinforcement learning control implemented with the \textbf{SKRL Python} module. Created \textbf{graphical} frameworks for debugging and \textbf{visualizing results} including an interactive TwoTank control game, using \textbf{Matplotlib} and \textbf{Pygame}. Achieved control with algorithms including: \textbf{A2C}, \textbf{DDPG}, \textbf{PPO}, \textbf{TD3}, and \textbf{TRPO}; in reference tracking and energy management physics control problems. Added random walk variants to the \textbf{Signals} nm sub-module for \textbf{robust sampling} in \textbf{data generation}.\\\hline
+1 year & Applied a variety of \textbf{tabular reinforcement learning} techniques including \textbf{Q-learning} and \textbf{Dyna-Q}, to a variety of academic \textbf{control problems} including \textbf{windy grid-world} and \textbf{maze-running}, following \textbf{Sutton/Barto}'s Introduction to Reinforcement Learning.\\\hline
+2 years & \textbf{Collaborated} with a team of \textbf{college tutors}, helping students at \textbf{BTC} and \textbf{SCV} in various technical subjects especially \textbf{algebra}, \textbf{calculus}, \textbf{chemistry}, \textbf{computer science}, and \textbf{physics}. Team members would often pass students to me with the more \textbf{challenging math} problems.\\\hline
+%3 months & Created an interactive ballistic physics simulator game with reinforcement learning control where two balls play tag, up to one controlled by the user at a time.\\\hline
+\end{tabular}
 \end{document} 
