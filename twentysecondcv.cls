@@ -26,8 +26,17 @@
 \RequirePackage{parskip}
 
 \usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-
+%\setlist[itemize]{leftmargin=*}
+\setlist[itemize]{leftmargin=*, topsep=0pt, partopsep=0pt, itemsep=-1.5pt, parsep=2pt}
+% \setlist[skills]{leftmargin=*, topsep=0pt, partopsep=0pt, itemsep=4pt, parsep=2pt}
+%\setlist[itemize]{itemsep=-3pt}
+%\setlist[itemize]{topsep=0pt, partopsep=0pt}
+% Add this code to your preamble
+\newenvironment{skillslist}{%
+  \begin{itemize}[leftmargin=*, topsep=0pt, partopsep=0pt, itemsep=4pt, parsep=2pt]
+}{%
+  \end{itemize}
+}
 \RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     pdftitle={},
@@ -254,11 +263,11 @@
 
  %------------------------------------------------
          
-        \vspace{3mm}
+        \vspace{1mm}
         \profilesection{Education}{3cm} 
         \education
         
-    \vspace{3mm}
+    \vspace{-1mm}
     \profilesection{Technical Skills}{1.2cm}
     
     {\large \textbf{Overview}}
@@ -267,7 +276,7 @@
         
         %------------------------------------------------
          
-        \vspace{3mm}
+        \vspace{1mm}
         \profilesection{Career Summary}{0.8cm} 
         \career
         
@@ -295,12 +304,14 @@
 
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  %\par\vspace{\parskip}
+  \par\vspace{-0.2\parskip}
 	{%
 		\LARGE\headingfont\color{headercolor}%
 		\@sectioncolor #1%
 	}
-  \par\vspace{1mm}
+  %\par\vspace{1mm}
+  \par\vspace{-0.2\parskip}
 }
 
 \renewcommand{\subsection}[1]{
